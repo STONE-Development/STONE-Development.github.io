@@ -1,18 +1,30 @@
-@media all and (max-width: 1200px) { /* screen size until 1200px */
+/* xs < 768 */
+@media screen and (max-width: 767px) {
     body {
-        font-size: 1.5em; /* 1.5x default size */
+        font-size: 0.9em;
     }
 }
-@media all and (max-width: 1000px) { /* screen size until 1000px */
+
+/* sm */
+@media screen and (min-width: 768px) {
     body {
-        font-size: 1.2em; /* 1.2x default size */
-        }
+        font-size: 1em;
     }
-@media all and (max-width: 500px) { /* screen size until 500px */
+}
+
+/* md */
+@media screen and (min-width: 992px) {
     body {
-        font-size: 0.8em; /* 0.8x default size */
-        }
+        font-size: 1.2em;
     }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
 
 .pg-content
 {
