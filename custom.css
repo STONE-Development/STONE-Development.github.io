@@ -1,29 +1,21 @@
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 0.9em;
-    }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+    body{font-size:0.5em}
 }
 
-/* sm */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1em;
-    }
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { 
+    body{font-size:0.8em}
 }
 
-/* md */
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 1.2em;
-    }
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+    body{font-size:1em}
 }
 
-/* lg */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.3em;
-    }
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { 
+    body{font-size:1.2em}
 }
 
 .pg-content
