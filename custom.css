@@ -1,21 +1,23 @@
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) { 
-    body{font-size:0.5em}
+html {
+  font-size: 14px;
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px) { 
-    body{font-size:0.8em}
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991px) { 
-    body{font-size:1em}
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
 }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199px) { 
-    body{font-size:1.2em}
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
 }
 
 .pg-content
