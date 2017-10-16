@@ -1,18 +1,18 @@
-#scale {
+scale {
   font-size: 0.55em;
 }
 
 @media(min-width:576px){
-  #scale{font-size: 0.9em;}
+  scale{font-size: 0.9em;}
   }
 @media(min-width:768px){
-  #scale{font-size: 1.1em;}
+  scale{font-size: 1.1em;}
   }
 @media(min-width:992px){
-  #scale{font-size: 1.3em;}
+  scale{font-size: 1.3em;}
   }
 @media(min-width:1200px){
-  #scale{font-size: 1.5em;}
+  scale{font-size: 1.5em;}
   }
 
 
