@@ -1,18 +1,18 @@
-html {
+h1 {
   font-size: 0.55em;
 }
 
 @media(min-width:576px){
-  html{font-size: 0.9em;}
+  h1{font-size: 0.9em;}
   }
 @media(min-width:768px){
-  html{font-size: 1.1em;}
+  h1{font-size: 1.1em;}
   }
 @media(min-width:992px){
-  html{font-size: 1.3em;}
+  h1{font-size: 1.3em;}
   }
 @media(min-width:1200px){
-  html{font-size: 1.5em;}
+  h1{font-size: 1.5em;}
   }
 
 
