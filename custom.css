@@ -9,10 +9,10 @@
   .scale{font-size: 5em;}
   }
 @media(min-width:992px){
-  .scale{font-size: 5em;}
+  .scale{font-size: 6em;}
   }
 @media(min-width:1200px){
-  .scale{font-size: 5em;}
+  .scale{font-size: 7em;}
   }
 
 
