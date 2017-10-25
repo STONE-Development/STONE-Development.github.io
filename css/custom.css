@@ -44,6 +44,16 @@ DARK:     #1A2027
   color: #F1D290;
 }
 
+.title .dark-bg
+{
+  color: #F1D290;
+}
+
+.title .dark-bg
+{
+  color: #1A2027;
+}
+
 .subtitle
 {
   font-family: "Montserrat", sans-serif;
@@ -52,19 +62,25 @@ DARK:     #1A2027
   color: #5B725F;
 }
 
-.pg-content
-{
-  display: flex;
-  text-align: center;
-}
-
 .dark-bg
 {
   background-color: #1A2027;
+  
 }
 .light-bg
 {
   background-color: #F1D290;
+}
+
+.txt-content
+{
+  padding:20px;
+}
+
+.pg-content
+{
+  display: block;
+  text-align: center;
 }
 
 @media(min-width:576px){
