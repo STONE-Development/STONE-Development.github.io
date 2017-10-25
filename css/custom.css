@@ -44,12 +44,12 @@ DARK:     #1A2027
   color: #F1D290;
 }
 
-.title .dark-bg
+.dark-bg .title
 {
   color: #F1D290;
 }
 
-.title .dark-bg
+.light-bg .title
 {
   color: #1A2027;
 }
