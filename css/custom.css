@@ -81,6 +81,7 @@ DARK:     #1A2027
 {
   display: block;
   text-align: center;
+  margin-top: 60px;
 }
 
 @media(min-width:576px){
