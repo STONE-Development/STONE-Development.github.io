@@ -58,9 +58,13 @@ DARK:     #1A2027
   text-align: center;
 }
 
-#home
+.dark-bg
 {
   background-color: #1A2027;
+}
+.light-bg
+{
+  background-color: #F1D290;
 }
 
 @media(min-width:576px){
