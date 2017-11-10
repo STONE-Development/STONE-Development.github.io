@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="mdc-typography" lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- import stylesheets -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link rel="stylesheet" href="css/custom.css">
-		
-		<title>STONE Development</title>
-	</head>
+		<title>Harry Miller</title>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400|Material+Icons">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
 	<body>
-	  <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #1A2027">
-	    <div class="container">
-  	    <a class="navbar-brand" href="#Home">STONE</a>
-  	    
-  	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
-  	      <span class="navbar-toggler-icon"></span>
-  	    </button>
-	    
-  	    <div class="collapse navbar-collapse" id="collapseNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#Home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
-            </li>
-          <!--</ul>
-          
-          <ul class="navbar-nav ml-auto">-->
-            <li class="nav-item">
-              <a class="nav-link" href="#Design">Design</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <div class="pg-content">
-      <div class="container-fluid" id="home">
-        <div style="margin-top:100px; padding:20px">
-          <h1 class="title">STONE Development</h1>
-          <p class="subtitle">iOS & Android Game Development</p>
-        </div>
-      </div>
-    </div>
-    
-		
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    
+		<header class="mdc-toolbar mdc-toolbar--fixed navbar">
+			<div class="nav-wrapper">
+				<div class="mdc-toolbar__row" style="min-height:inherit;">
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+						<a id ="nav-logo" href="#"><img src="images/LOGO192x192.png" alt=""></a>
+						<a id ="nav-title" href="#" class="mdc-toolbar__title title">Harry.M</a>
+					</section>
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+						<div style="padding-top:9px">
+							<nav id="tab-bar-modified" class="mdc-tab-bar">
+  								<a class="mdc-tab mdc-tab--active" href="#one">Home</a>
+  								<a class="mdc-tab fade-color" href="#two">Portfolio</a>
+  								<a class="mdc-tab fade-color" href="#three">About Me</a>
+  								<a class="mdc-tab fade-color" href="#four">Contact Me</a>
+  								<span class="mdc-tab-bar__indicator fade-color"></span>
+							</nav>
+						</div>
+						<i id="tab-bar-menu" class="material-icons mdc-toolbar__menu-icon">menu</i>
+					</section>
+				</div>
+			</div>
+		</header>
+
+
+		<main class="mdc-toolbar-fixed-adjust">
+			<div id="full-height"></div>
+		</main>
 	</body>
 </html>

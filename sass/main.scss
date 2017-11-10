@@ -1,0 +1,36 @@
+$font-stack: Roboto, sans-serif;
+$navbar-height: 56px;
+$icon-size: 40px;
+
+$mdc-theme-primary: #F5F5F5;
+$mdc-theme-secondary: #F44336;
+$mdc-theme-background: #FFFFFF;
+
+@import "material-components-web/material-components-web";
+@import "sass/partials/navbar";
+@import "sass/partials/divs";
+
+html{
+	height:100%;
+}
+
+body{
+	font-family:$font-stack;
+	margin:0px;
+	padding:0px;
+	height:95%
+}
+
+a{
+	text-decoration:none;
+}
+
+.mdc-toolbar-fixed-adjust{
+	margin-top:56px;
+	height:100%;
+}
+
+.mdc-tab::after{
+	background-color: $mdc-theme-secondary !important;
+}
+
