@@ -30,7 +30,14 @@ a{
 	height:100%;
 }
 
-.mdc-tab::after{
-	background-color: $mdc-theme-secondary !important;
+.mdc-tab{
+
+	height:56px;
+
+	&::after{
+		margin-top:8px;
+		background-color: $mdc-theme-secondary !important;
+	}
+	
 }
 
