@@ -8,6 +8,7 @@ $mdc-theme-background: #FFFFFF;
 
 @import "material-components-web/material-components-web";
 @import "sass/partials/navbar";
+@import "sass/partials/drawer";
 @import "sass/partials/divs";
 
 html{
@@ -18,7 +19,7 @@ body{
 	font-family:$font-stack;
 	margin:0px;
 	padding:0px;
-	height:95%
+	background-color:#ececec;
 }
 
 a{
