@@ -21,7 +21,7 @@ body{
 	font-family:$font-stack;
 	margin:0px;
 	padding:0px;
-	background-color:#ececec;
+	background-color:$mdc-theme-background;
 }
 
 a{
@@ -41,6 +41,5 @@ a{
 		margin-top:8px;
 		background-color: $mdc-theme-secondary !important;
 	}
-	
-}
 
+}
