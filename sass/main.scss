@@ -1,45 +1,41 @@
 $font-stack: Roboto, sans-serif;
 $navbar-height: 56px;
 $icon-size: 40px;
-
 $mdc-theme-primary: #F5F5F5;
 $mdc-theme-secondary: #F44336;
 $mdc-theme-background: #FFFFFF;
-
 @import "material-components-web/material-components-web";
 @import "sass/partials/navbar";
 @import "sass/partials/drawer";
 @import "sass/partials/divs";
 @import "sass/partials/spinner";
 
-html{
-	height:100%;
+html {
+	height: 100%;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-body{
-	font-family:$font-stack;
-	margin:0px;
-	padding:0px;
-	background-color:$mdc-theme-background;
+body {
+	font-family: $font-stack;
+	margin: 0;
+	padding: 0;
+	background-color: $mdc-theme-background;
 }
 
-a{
-	text-decoration:none;
+a {
+	text-decoration: none;
 }
 
-.mdc-toolbar-fixed-adjust{
-	margin-top:56px;
-	height:100%;
+.mdc-toolbar-fixed-adjust {
+	margin-top: 56px;
+	height: 100%;
 }
 
-.mdc-tab{
+.mdc-tab {
+	height: 56px;
 
-	height:56px;
-
-	&::after{
-		margin-top:8px;
+	&::after {
+		margin-top: 8px;
 		background-color: $mdc-theme-secondary !important;
 	}
-
 }
