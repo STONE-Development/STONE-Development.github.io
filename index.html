@@ -1,113 +1,113 @@
 <!DOCTYPE html>
 <html class="mdc-typography" lang="en">
 
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-			<link rel="shortcut icon" type="image/png" href="images/favicon/favicon.png" />
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/favicon/favicon.png" />
 
-			<title>Harry Miller</title>
+	<title>Harry Miller</title>
 
-			<link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400|Material+Icons">
-			<link rel="stylesheet" href="css/main.css">
-		</head>
+	<link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400|Material+Icons">
+	<link rel="stylesheet" href="css/main.css">
+</head>
 
-		<body>
-			<header class="mdc-toolbar mdc-toolbar--fixed navbar">
-				<div class="nav-wrapper">
-					<div class="mdc-toolbar__row" style="min-height:inherit;">
+<body>
+	<header class="mdc-toolbar mdc-toolbar--fixed navbar">
+		<div class="nav-wrapper">
+			<div class="mdc-toolbar__row" style="min-height:inherit;">
 
-						<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-							<i id="tab-bar-menu" class="material-icons mdc-toolbar__menu-icon">menu</i>
-							<a id="nav-logo" href="#"><img src="images/LOGO192x192.png" alt=""></a>
-							<a id="nav-title" href="#" class="mdc-toolbar__title title">Harry.M</a>
-						</section>
+				<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+					<i id="tab-bar-menu" class="material-icons mdc-toolbar__menu-icon">menu</i>
+					<a id="nav-logo" href="#"><img src="images/LOGO192x192.png" alt=""></a>
+					<a id="nav-title" href="#" class="mdc-toolbar__title title">Harry.M</a>
+				</section>
 
-						<section id="tab-bar-modified" class="mdc-toolbar__section mdc-toolbar__section--align-end">
-							<div>
-								<nav class="mdc-tab-bar">
-									<a class="mdc-tab mdc-tab--active" href="#home">Home</a>
-									<a class="mdc-tab fade-color" href="#portfolio">Portfolio</a>
-									<a class="mdc-tab fade-color" href="#about">About Me</a>
-									<a class="mdc-tab fade-color" href="#contact">Contact Me</a>
-									<span class="mdc-tab-bar__indicator fade-color"></span>
-								</nav>
-							</div>
-						</section>
+				<section id="tab-bar-modified" class="mdc-toolbar__section mdc-toolbar__section--align-end">
+					<div>
+						<nav class="mdc-tab-bar">
+							<a class="mdc-tab mdc-tab--active" href="#home">Home</a>
+							<a class="mdc-tab fade-color" href="#portfolio">Portfolio</a>
+							<a class="mdc-tab fade-color" href="#about">About Me</a>
+							<a class="mdc-tab fade-color" href="#contact">Contact Me</a>
+							<span class="mdc-tab-bar__indicator fade-color"></span>
+						</nav>
+					</div>
+				</section>
 
+			</div>
+		</div>
+	</header>
+
+	<aside id="nav-menu" class="mdc-temporary-drawer" data-mdc-auto-init="MDCTemporaryDrawer">
+		<nav class="mdc-temporary-drawer__drawer">
+			<nav id="drawer-header" class="mdc-temporary-drawer__header">
+
+				<div class="mdc-temporary-drawer__header-content">
+					<img style="height:42px; margin-right:16px;" src="images/LOGO192x192.png" alt="">
+					<div>
+						<h1 class="mdc-typography--body2">Harry Miller</h1>
+						<h1 class="mdc-typography--body1">harry@colinmiller.co.uk</h1>
 					</div>
 				</div>
-			</header>
 
-			<aside id="nav-menu" class="mdc-temporary-drawer" data-mdc-auto-init="MDCTemporaryDrawer">
-				<nav class="mdc-temporary-drawer__drawer">
-					<nav id="drawer-header" class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content" style="align-items:flex-start;">
+					<i id="nav-menu-back" class="material-icons">arrow_back</i>
+				</div>
 
-						<div class="mdc-temporary-drawer__header-content">
-							<img style="height:42px; margin-right:16px;" src="images/LOGO192x192.png" alt="">
-							<div>
-								<h1 class="mdc-typography--body2">Harry Miller</h1>
-								<h1 class="mdc-typography--body1">harry@colinmiller.co.uk</h1>
-							</div>
-						</div>
+			</nav>
 
-						<div class="mdc-temporary-drawer__header-content" style="align-items:flex-start;">
-							<i id="nav-menu-back" class="material-icons">arrow_back</i>
-						</div>
+			<hr class="mdc-list-divider">
 
-					</nav>
-
-					<hr class="mdc-list-divider">
-
-					<nav class="mdc-list">
-						<a class="mdc-list-item" href="#home" data-mdc-auto-init="MDCRipple">
+			<nav class="mdc-list">
+				<a class="mdc-list-item" href="#home" data-mdc-auto-init="MDCRipple">
 								<i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Home
 							</a>
-						<a class="mdc-list-item" href="#portfolio" data-mdc-auto-init="MDCRipple">
+				<a class="mdc-list-item" href="#portfolio" data-mdc-auto-init="MDCRipple">
 								<i class="material-icons mdc-list-item__start-detail" aria-hidden="true">grid_on</i>Portfolio
 							</a>
-						<a class="mdc-list-item" href="#about" data-mdc-auto-init="MDCRipple">
+				<a class="mdc-list-item" href="#about" data-mdc-auto-init="MDCRipple">
 								<i class="material-icons mdc-list-item__start-detail" aria-hidden="true">person</i>About
 							</a>
-						<a class="mdc-list-item" href="#contact" data-mdc-auto-init="MDCRipple">
+				<a class="mdc-list-item" href="#contact" data-mdc-auto-init="MDCRipple">
 								<i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>Contact
 							</a>
-					</nav>
-				</nav>
-			</aside>
+			</nav>
+		</nav>
+	</aside>
 
-			<div class="loader">
-				<svg viewbox="0 0 32 32" width="32" height="32">
+	<div class="loader">
+		<svg viewbox="0 0 32 32" width="32" height="32">
 					  <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
 			  </svg>
+	</div>
+
+	<div class="mdc-toolbar-fixed-adjust">
+		<div id="dynamic-content">
+			<div style="padding:24px">
+				<h1 class="mdc-typography--title">Main Title</h1>
+				<h2 class="mdc-typography--subheading1">Subheading</h2>
+				<p class="mdc-typography--body1">
+					Body text
+				</p>
 			</div>
+		</div>
+	</div>
 
-			<div class="mdc-toolbar-fixed-adjust">
-				<div id="dynamic-content">
-					<div style="padding:24px">
-						<h1 class="mdc-typography--title">Main Title</h1>
-						<h2 class="mdc-typography--subheading1">Subheading</h2>
-						<p class="mdc-typography--body1">
-							Body text
-						</p>
-					</div>
-				</div>
-			</div>
+	<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+	<script>
+		mdc.autoInit();
+		document.getElementById('tab-bar-menu').addEventListener('click', function(evt) {
+			evt.preventDefault();
+			document.getElementById('nav-menu').MDCTemporaryDrawer.open = true;
+		});
 
-			<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
-			<script>
-				mdc.autoInit();
-				document.getElementById('tab-bar-menu').addEventListener('click', function(evt) {
-					evt.preventDefault();
-					document.getElementById('nav-menu').MDCTemporaryDrawer.open = true;
-				});
-
-				document.getElementById('nav-menu-back').addEventListener('click', function(evt) {
-					evt.preventDefault();
-					document.getElementById('nav-menu').MDCTemporaryDrawer.open = false;
-				});
-			</script>
-	</body>
+		document.getElementById('nav-menu-back').addEventListener('click', function(evt) {
+			evt.preventDefault();
+			document.getElementById('nav-menu').MDCTemporaryDrawer.open = false;
+		});
+	</script>
+</body>
 
 </html>
