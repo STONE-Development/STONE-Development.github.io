@@ -9061,11 +9061,6 @@ a.mdc-list-item {
   position: relative;
   background-color: #F5F5F5; }
 
-#dynamic-content {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1400px; }
-
 .loader {
   left: 50%;
   top: 50%;
@@ -9132,8 +9127,8 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: #FFFFFF; }
 
 a {
