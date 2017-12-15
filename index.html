@@ -26,8 +26,8 @@
 
 				<section id="tab-bar-modified" class="mdc-toolbar__section mdc-toolbar__section--align-end">
 					<div>
-						<nav class="mdc-tab-bar">
-							<a class="mdc-tab mdc-tab--active" href="#home">Home</a>
+						<nav class="mdc-tab-bar" data-mdc-auto-init="MDCTabBar">
+							<a class="mdc-tab fade-color mdc-tab--active" href="#home">Home</a>
 							<a class="mdc-tab fade-color" href="#portfolio">Portfolio</a>
 							<a class="mdc-tab fade-color" href="#about">About Me</a>
 							<a class="mdc-tab fade-color" href="#contact">Contact Me</a>
@@ -84,18 +84,46 @@
 	</div>
 
 	<div class="mdc-toolbar-fixed-adjust">
-		<div id="dynamic-content">
-			<div style="padding:24px">
-				<h1 class="mdc-typography--title">Main Title</h1>
-				<h2 class="mdc-typography--subheading1">Subheading</h2>
+		<div class="dynamic-content">
+
+			<div id = "home" class="invisible" style="padding:24px">
+				<h1 class="mdc-typography--title">Home</h1>
+				<h2 class="mdc-typography--subheading1">This is the home section</h2>
 				<p class="mdc-typography--body1">
-					Body text
+					BOTTOM YEET
 				</p>
 			</div>
+
+			<div id = "portfolio" class="invisible" style="padding:24px">
+				<h1 class="mdc-typography--title">Portfolio</h1>
+				<h2 class="mdc-typography--subheading1">This is the porfolio section</h2>
+				<p class="mdc-typography--body1">
+					BOTTOM MEME
+				</p>
+			</div>
+
+			<div id = "about" class="invisible" style="padding:24px">
+				<h1 class="mdc-typography--title">About</h1>
+				<h2 class="mdc-typography--subheading1">This is the about section</h2>
+				<p class="mdc-typography--body1">
+					BOTTOM YEET
+				</p>
+			</div>
+
+			<div id = "contact" class="invisible" style="padding:24px">
+				<h1 class="mdc-typography--title">Contact</h1>
+				<h2 class="mdc-typography--subheading1">This is the contact section</h2>
+				<p class="mdc-typography--body1">
+					BOTTOM YEET
+				</p>
+			</div>
+
 		</div>
 	</div>
 
 	<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://rawgit.com/asual/jquery-address/master/src/jquery.address.js"></script>
 	<script>
 		mdc.autoInit();
 		document.getElementById('tab-bar-menu').addEventListener('click', function(evt) {
@@ -106,6 +134,38 @@
 		document.getElementById('nav-menu-back').addEventListener('click', function(evt) {
 			evt.preventDefault();
 			document.getElementById('nav-menu').MDCTemporaryDrawer.open = false;
+		});
+	</script>
+	<script>
+		var pageChange = function() {
+			var hash = window.location.hash;
+
+			$('.loader').removeClass('invisible');
+			$('#home').addClass('invisible');
+			$('#portfolio').addClass('invisible');
+			$('#about').addClass('invisible');
+			$('#contact').addClass('invisible');
+
+			switch(hash){
+				case '#home':
+					$('#home').removeClass('invisible');
+					$('.loader').addClass('invisible');
+					break;
+				case '#portfolio':
+					$('#portfolio').removeClass('invisible');
+					$('.loader').addClass('invisible');
+					break;
+				case '#about':
+					$('#about').removeClass('invisible');
+					$('.loader').addClass('invisible');
+					break;
+				case '#contact':
+					$('#contact').removeClass('invisible');
+					$('.loader').addClass('invisible');
+					break;
+			}};
+		$.address.change(function(event){
+			pageChange();
 		});
 	</script>
 </body>

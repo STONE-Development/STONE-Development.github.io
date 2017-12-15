@@ -34,8 +34,14 @@ a {
 .mdc-tab {
 	height: 56px;
 
-	&::after {
+}
+
+.mdc-tab-bar__indicator	{
 		margin-top: 8px;
 		background-color: $mdc-theme-secondary !important;
 	}
+
+
+.invisible {
+	display:none;
 }

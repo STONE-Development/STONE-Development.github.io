@@ -9061,6 +9061,11 @@ a.mdc-list-item {
   position: relative;
   background-color: #F5F5F5; }
 
+.dynamic-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+
 .loader {
   left: 50%;
   top: 50%;
@@ -9140,6 +9145,10 @@ a {
 
 .mdc-tab {
   height: 56px; }
-  .mdc-tab::after {
-    margin-top: 8px;
-    background-color: #F44336 !important; }
+
+.mdc-tab-bar__indicator {
+  margin-top: 8px;
+  background-color: #F44336 !important; }
+
+.invisible {
+  display: none; }
