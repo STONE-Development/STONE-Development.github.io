@@ -163,6 +163,8 @@
 					$('#contact').removeClass('invisible');
 					$('.loader').addClass('invisible');
 					break;
+				default:
+					window.location.href = "#home";
 			}};
 		$.address.change(function(event){
 			pageChange();
